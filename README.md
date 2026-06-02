@@ -21,7 +21,7 @@ The report utilizes an advanced UI/UX layout featuring an interactive collapsibl
 ### 1. Main Financial Performance View
 This view displays core time-series trends and global performance distributions when filters are collapsed.
 
-![Revenue Analysis Main Dashboard](images/revenue%20dashboard%20power%201.jpg)
+![Revenue Analysis Main Dashboard](Images/revenue%20dashboard%20power%201.jpg)
 
 - Revenue, Profit, and COGS by Year Quarter (Multi-Line Chart): A continuous time-series chart mapping the close relationship between cost spikes, revenue growth, and net profit margins across quarters (e.g., Q3-2013 tracking $4.48M Revenue vs. $3.72M COGS).
 - Revenue, COGS, and Profit by Country (100% Stacked Bar Chart): Compares performance across international markets including the United States, Canada, France, Germany, and Mexico, instantly highlighting which regions yield the highest net profit component.
@@ -32,7 +32,7 @@ This view displays core time-series trends and global performance distributions 
 ### 2. Advanced Interactive UI Elements (Slicer Panel Open)
 By implementing customized Power BI Bookmarks and Selection Panes, users can seamlessly trigger a slide-out navigation menu for clean data exploration.
 
-![Revenue Analysis Slicer Panel Open](images/revenue%20dashboard%20power%202.jpg)
+![Revenue Analysis Slicer Panel Open](Images/revenue%20dashboard%20power%202.jpg)
 
 - Collapsible Filter Pane: Clicking the filter icon triggers a smooth, slide-out navigation panel containing multi-select slicers for Year, Month Name, Country, Product, and Segment for granular cross-filtering.
 - Global Reset Action: Includes a custom RESET button mapped with a bookmark action that instantly clears all selected parameters and returns the entire dashboard to its default aggregate state.
