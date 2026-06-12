@@ -1,47 +1,67 @@
-# Revenue & Profitability Financial Analysis (Power BI)
+# Revenue & Profitability Financial Analysis — Power BI
 
-An executive-level Power BI dashboard engineered to monitor, analyze, and optimize corporate financial health. This intelligence solution provides a deep dive into revenue streams, profit margins, and Cost of Goods Sold (COGS) across various dimensions including time, geography, product lines, and market segments.
-
----
-
-## 📊 Business Case & Key Financial Metrics
-
-The dashboard is designed with a modern financial layout, using a clean corporate crimson accent color. It focuses on three primary High-Level KPIs to give executives an immediate health check of the business:
-
-- Total Revenue: $118.73M (Gross Sales volume generated).
-- Profit Margin %: Stable average of 14% across core operations.
-- Total COGS: $101.83M (Total Cost of Goods Sold, tracking direct manufacturing or acquisition costs).
+> An executive-level financial intelligence dashboard monitoring $118.7M in revenue across time, geography, product lines, and market segments. Built for leadership teams that need one clean view of financial health — not a spreadsheet.
 
 ---
 
-## 🖥️ Dashboard Architecture & Visual Features
+## Key Metrics
 
-The report utilizes an advanced UI/UX layout featuring an interactive collapsible Slicer Panel that optimizes screen real estate while offering deep, customized filtering capabilities.
+| KPI | Value |
+|-----|-------|
+| Total Revenue | $118.73M |
+| Total COGS | $101.83M |
+| Profit Margin | 14% avg |
 
-### 1. Main Financial Performance View
-This view displays core time-series trends and global performance distributions when filters are collapsed.
+---
+
+## Dashboard Views
+
+### Main Financial Performance View
 
 ![Revenue Analysis Main Dashboard](Images/revenue%20dashboard%20power%201.jpg)
 
-- Revenue, Profit, and COGS by Year Quarter (Multi-Line Chart): A continuous time-series chart mapping the close relationship between cost spikes, revenue growth, and net profit margins across quarters (e.g., Q3-2013 tracking $4.48M Revenue vs. $3.72M COGS).
-- Revenue, COGS, and Profit by Country (100% Stacked Bar Chart): Compares performance across international markets including the United States, Canada, France, Germany, and Mexico, instantly highlighting which regions yield the highest net profit component.
-- Revenue, COGS, and Profit by Product & Segment: Evaluates product-level performance across key lines (Paseo, VTT, Velo, etc.) and breaks down target demographics across corporate, government, enterprise, midmarket, and small business sectors.
+The default view shows core financial trends with filters collapsed, optimizing screen space for the data itself.
+
+| Visual | Purpose |
+|--------|---------|
+| Revenue, Profit & COGS by Quarter (multi-line chart) | Tracks the relationship between cost spikes, revenue growth, and margin across quarters — e.g., Q3-2013: $4.48M revenue vs. $3.72M COGS |
+| Revenue, COGS & Profit by Country (100% stacked bar) | Instant comparison of net profit contribution across US, Canada, France, Germany, and Mexico |
+| Revenue by Product & Segment | Performance across Paseo, VTT, Velo, and other lines, broken down by corporate, government, enterprise, midmarket, and small business |
 
 ---
 
-### 2. Advanced Interactive UI Elements (Slicer Panel Open)
-By implementing customized Power BI Bookmarks and Selection Panes, users can seamlessly trigger a slide-out navigation menu for clean data exploration.
+### Interactive Slicer Panel
 
 ![Revenue Analysis Slicer Panel Open](Images/revenue%20dashboard%20power%202.jpg)
 
-- Collapsible Filter Pane: Clicking the filter icon triggers a smooth, slide-out navigation panel containing multi-select slicers for Year, Month Name, Country, Product, and Segment for granular cross-filtering.
-- Global Reset Action: Includes a custom RESET button mapped with a bookmark action that instantly clears all selected parameters and returns the entire dashboard to its default aggregate state.
+A collapsible filter panel built with Power BI Bookmarks and Selection Pane for clean, distraction-free exploration.
+
+- **Slide-out filter pane:** Multi-select slicers for Year, Month, Country, Product, and Segment
+- **Global reset button:** One click clears all active filters and returns the dashboard to its aggregate state
 
 ---
 
-## 🛠️ Technical Implementation & Analytics Specs
+## Technical Implementation
 
-- Technology Stack: Power BI Desktop / Power BI Service.
-- Advanced DAX Formulas: Implemented explicit measures for financial aggregations and complex calculated ratios like dynamic profit margin percentages:
-  $$\text{Profit Margin \%} = \frac{\text{Profit}}{\text{Revenue}}$$
-- UI/UX Best Practices: Leveraged dynamic object visibility, shadow container cards, customized tooltips, and a cohesive corporate color palette to maximize user adoption and avoid visual clutter.
+**Data & Modeling**
+- Platform: Power BI Desktop / Power BI Service
+- DAX measures for all financial aggregations
+
+**Core DAX measure:**
+```DAX
+Profit Margin % = DIVIDE([Total Profit], [Total Revenue])
+```
+
+**UI/UX**
+- Dynamic object visibility for the collapsible slicer panel
+- Shadow container cards, customized tooltips
+- Corporate crimson accent palette with dark backgrounds for executive readability
+
+---
+
+## Insights this dashboard surfaces
+
+- Which quarters show margin compression despite revenue growth
+- Which countries contribute disproportionate profit relative to their revenue share
+- Which product-segment combinations are most and least profitable
+- How COGS tracks against revenue over time — and where the gap narrows, and a cohesive corporate color palette to maximize user adoption and avoid visual clutter.
